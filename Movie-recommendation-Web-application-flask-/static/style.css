@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --home_color: #1b2838;        /* Deep Midnight Blue */
+--container_color: #2a3f5a;   /* Soft Navy */
+--bg_color: #fcb900;          /* Charcoal Black */
+--sec_color: #ffffff;         /* Warm Tangerine for accents */
+--text_color: #000000;        /* Pure White for readability */
+--highlight_color: #e94560;   /* Vibrant Coral for highlight elements */
+--button_color: #4285f4;      /* Bright Blue for buttons */
+--hover_color: #f97316;       /* Dynamic Orange on hover effects */
+--progBar_bg: #000000;        /* Light Gray for progress bar background */
+--progBar_fill: #0e8a16;
+    --progBarValue: 0%;
+}
+
+body {
+    background: linear-gradient(300deg, #9901e094, #d40808, #faa200);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+.container {
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: var(--home_color);
+    /* box-shadow: 0 4px 8px black; */
+}
+
+header.shadow {
+    background-color: var(--text_color);
+    transition: 0.5s;
+    box-shadow: 0 1px 4px rgb(34, 33, 33);
+}
+
+header.shadow .logo {
+    color: var(--home_color);
+    transition: 0.5s;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text_color);
+}
+
+.logo span {
+    color: var(--sec_color);
+}
+
+.btn-orange {
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: var(--sec_color);
+    color: var(--text_color);
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #a34303;
+    transition: 0.3s;
+}
+
+/* search style */
+
+.padding {
+    padding: 10rem;
+
+}
+
+
+.form-control {
+    height: 52px;
+    background: #fff;
+    color: #3a4348;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.px-4 {
+    padding-left: 1.5rem !important;
+}
+
+.domain-price span {
+    color: #3a4348;
+    margin: 0 10px;
+}
+
+.domain-price span small {
+    color: #24bdc9;
+}
+
+.listcard{
+    width: 35rem;
+    border:none;
+}
+
+.list-group-item{
+    cursor: pointer;
+}
+
+.list-group-item:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.Recommend_btn{
+    background: none;
+    margin-left: 30px;
+    border: 2px solid var(--sec_color);
+    color: var(--sec_color);
+}
+
+.Recommend_btn:hover{
+    background: var(--sec_color);
+    color: rgb(0, 0, 0);
+}
+
+#head{
+    display: none;
+    width: 100%;
+    padding: 0 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#head span{
+    display: contents;
+    color: var(--sec_color);
+}
+
+
+#card-container{
+    margin-top: 90px; 
+}
+
+#card-container .col{
+    display:none;
+}
+
+#card-container .card{
+    transition: all ease-in-out 0.5s;
+}
+
+#card-container .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px #272727;
+    cursor: pointer;
+}
+
+.fade-in{
+    animation: fadeInBottom 0.6s cubic-bezier(0.2, 1.10, 0.5, 1.50);
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to { opacity: 1 }
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
